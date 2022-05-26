@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:wght@500&family=EB+Garamond&family=Koulen&family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cormorant+Garamond:wght@500&family=EB+Garamond&family=Koulen&family=Lobster&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    background-image: url(back1.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: back;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes back{
+    0%{
+        background-image: url(back1.png);
+    }
+    50%{
+        background-image: url(back2.png);
+    }
+    100%{
+        background-image: url(back1.png);
+    }
+}
+.over{
+    background-color: rgba(224, 224, 224,0.2);
+    padding: 2vw;
+    margin-top: 5vh;
+    animation-name: colo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+/*
+@keyframes colo{
+    0%{
+        background-color: rgba(224, 224, 224,0.5);
+    }
+     50%{
+        background-color: rgba(255, 255, 255,0.7);
+    }
+    
+    100%{
+        background-color: rgba(224, 224, 224,0.5);
+    }
+}*/
+h2{
+    color: rgb(252, 252, 252);
+    letter-spacing: 1vw;
+    background-color: black;
+    font-size:3vw;
+    margin:2vw;
+    text-align: center;
+    padding: 3vw;
+    
+   
+}
+h1{
+    color: rgb(69, 174, 226);
+    text-align: center;
+    margin-top: 4vh;
+    font-size: 10vw;
+    letter-spacing: 2vw;
+    
+}
+h4{
+    text-align: center;
+
+    margin: 5vh 0;
+    
+    color: rgb(7, 7, 7);
+    font-size: 5vw;
+    font-family: 'Abril Fatface', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Koulen', cursive;
+font-family: 'Lobster', cursive;
+animation-name: col;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.over p{
+    color: rgb(16, 17, 17);
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Koulen', cursive;
+    font-family: 'Lobster', cursive;
+    animation-name: col;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes col{
+    0%{
+        color: rgb(250, 250, 250);
+    }
+    50%{
+        color: rgb(255, 255, 255);
+    }
+    
+    100%{
+        color: rgb(255, 255, 255);
+    }
+}
+/*-----------------------------------------X----------------X----------------*/
+
+.slider{
+    overflow: auto; 
+}
+figure{
+    position: relative;
+    width: 600%;
+    margin: 0;
+    left: 0;
+}
+figure .capti{
+    width: 16.6%;
+    float: left;
+   
+}
+
+.capt{
+    
+    width: 80vw;
+    margin: 5vh auto;
+    box-shadow: 5px 5px 5px rgba(27, 22, 22,0.8);
+    border: 1px solid black;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.capt p,.chek{
+color: rgb(16, 17, 17);
+text-align: center;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Koulen', cursive;
+font-family: 'Lobster', cursive;
+margin: 5vh;
+}
+.fentys{
+    text-decoration: overline;
+   
+}
+.capti button{
+    background-color: transparent;
+    padding: 4px 10px;
+    display: block;
+    margin: 3vh auto;
+    
+}
+.add{
+    width: 100vw;
+    position: relative;
+}
+.add img{
+    width: 100%;
+    position: relative;
+}
+.add button{
+    border: 1px rgb(2, 0, 128) solid;
+    position: absolute;
+    font-size: larger;
+    color: rgb(65, 255, 7);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 15vw;
+    top: 40%;
+    left: 30vw;
+    display: block;
+    margin: 3vh auto;
+background: transparent;  
+
+animation-name: buton;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes buton{
+0%{
+  
+    transform: rotate(180deg);
+    border-bottom-left-radius: 50px;
+}
+100%{
+    opacity: 1;
+    color: rgb(0, 255, 255);
+    background-color: rgb(255, 10, 10);
+    
+}
+}
+
+/*---------------------------------X-----------------------------X*/
+
+
+/*home */
+
+span{
+font-style: italic;
+font-weight: lighter;
+color: black;
+}
+/*.imagedesc{
+    box-shadow: 5px 5px 5px rgba(27, 22, 22,0.8);
+} */
+.imagedesc img{
+    width: 100%;
+    height: 200px;
+    
+}
+.imagedesc{
+   
+    box-shadow: 0px 5px 3px black;
+}
+.responsive{
+float: left;
+width: 50%;
+padding: 7px 2px;
+
+  
+}
+.desc{
+    padding: 2vw;
+}
+.desc p {
+    color: rgb(16, 17, 17);
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Koulen', cursive;
+    font-family: 'Lobster', cursive; 
+}
+
+.desc button{
+    border: 1px rgb(0, 0, 0) solid;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    margin: 4vh auto;
+    background: transparent;   
+}
+h3{
+    text-align: center;
+    color: rgb(4, 0, 238);
+    text-decoration: underline;
+    margin-bottom: 5vh;
+
+}
